@@ -2,7 +2,7 @@ import {fromJS} from 'immutable';
 import {NavigationActions} from 'react-navigation';
 import includes from 'lodash/includes';
 
-import AppNavigator from '../component/navigator/screen';
+import AppNavigator from '../component/navigator/navigator';
 
 export default function NavigatorReducer(state, action) {
   // Initial state

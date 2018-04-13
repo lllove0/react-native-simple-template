@@ -10,7 +10,7 @@ import Login from '../../view/auth/login';
 const headerColor = '#39babd';
 const activeColor = 'white';
 
-export const HomeTab = TabNavigator({
+export const MainScreenNavigator = TabNavigator({
   Home: {screen: Home},
   Result: {screen: Result},
   Lobby: {screen: Lobby},
@@ -28,7 +28,7 @@ export const HomeTab = TabNavigator({
   }
 });
 
-HomeTab.navigationOptions = {
+MainScreenNavigator.navigationOptions = {
   title: 'Template',
   headerTitleStyle: {color: 'white'},
   headerStyle: {
@@ -39,7 +39,7 @@ HomeTab.navigationOptions = {
 
 // Root navigator is a StackNavigator
 const AppNavigator = StackNavigator({
-  Main: { screen: HomeTab },
+  Main: { screen: MainScreenNavigator },
   Login: { screen: Login }
 });
 

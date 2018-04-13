@@ -10,7 +10,7 @@ export default class Lobby extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>大厅</Text>
+        <Text>购彩大厅</Text>
       </View>
     );
   }

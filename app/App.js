@@ -6,14 +6,14 @@
 import React, {Component} from 'react';
 import {Provider} from 'react-redux';
 import store from './reducer/store';
-import Navigator from './component/navigator';
+import AppNavigator from './component/navigator';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <Provider store={store}>
-        <Navigator />
+        <AppNavigator />
       </Provider>
     );
   }
