@@ -5,12 +5,6 @@
     "node": true,
     "jest": true
   },
-  "ecmaFeatures": {
-    "jsx": true,
-    "restParams": true,
-    "spread": true,
-    "experimentalObjectRestSpread": true
-  },
   "extends": "eslint:recommended",
   "plugins": [
     "babel",
@@ -27,7 +21,7 @@
     "semi": [2,"always"],
     "no-console": 0,
     "max-len": [1,110],
-    "comma-dangle": [2,"never"],
+    "comma-dangle": [0,"never"],
     "no-cond-assign": [2, "always"],
     "no-ex-assign": 2,
     "curly": 2,
@@ -59,9 +53,9 @@
     }
     ],
     "keyword-spacing": ["error", {"before": true, "after": true}],
-    "space-before-blocks": [2, "never"],
+    "space-before-blocks": [2, "always"],
     "space-before-function-paren": [2, "never"],
-    "object-curly-spacing": [2, "never"],
+    "object-curly-spacing": [2, "always"],
     "array-bracket-spacing": [2, "never"],
     "computed-property-spacing": [2, "never"],
     "space-in-parens": [2, "never"],
@@ -144,10 +138,9 @@
     "react/react-in-jsx-scope": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
-    "react/wrap-multilines": 1,
     "babel/generator-star-spacing": 1,
     "babel/new-cap": 0,
-    "babel/object-curly-spacing": [2, "never"],
+    "babel/object-curly-spacing": [2, "always"],
     "babel/object-shorthand": 1,
     "babel/arrow-parens": 0,
     "babel/no-await-in-loop": 1
